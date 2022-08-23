@@ -1,18 +1,17 @@
+import os
 from telebot import types, TeleBot, logger
 import markups as nav
 from menu_data import *
 from tg_token import BOT_TOKEN, APP_URL
 from flask import Flask, request
 import logging
-import os
+
 
 
 gobot = TeleBot(BOT_TOKEN)
 server = Flask(__name__)
 logger.setLevel(logging.DEBUG)
 
-
-CHANNEL_ID = ''
 CHANNEL_URL = '@ACE_14Karat'
 
 @gobot.message_handler(commands=['start'])

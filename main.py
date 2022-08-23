@@ -9,7 +9,7 @@ import os
 
 gobot = TeleBot(BOT_TOKEN)
 server = Flask(__name__)
-logger.setlevel(logging.DEBUG)
+logger.setLevel(logging.DEBUG)
 
 
 CHANNEL_ID = ''

@@ -80,6 +80,9 @@ def get_user_text(message):
         elif message.chat.type == 'supergroup':
                 if any(message.text in it for it in promocodes_words ):
                         gobot.reply_to(message, text=promocodes, parse_mode='html', disable_web_page_preview=True)
+
+                elif any(message.text in it for it in last_update_words):
+                        gobot.reply_to(message, text=last_update_link, parse_mode='html', disable_web_page_preview=True)
                         
 
 @server.route(f'/{BOT_TOKEN}', methods=['POST'])

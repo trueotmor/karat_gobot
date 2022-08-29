@@ -18,7 +18,7 @@ short_hello_message = 'Чтобы открыть меню жмакай сюда 
 
 useful_message = 'Тут должны быть разные полезности по игре, кидайте в личку @Karatcc или @goodorfood что нужно добавить.\n\n'
 
-promocodes = '<b><a href="https://t.me/AWAKEN_NEWS/630">🟢 Акутальные Промокоды 🟢</a></b>'
+promocodes = '<b><a href="https://t.me/AWAKEN_NEWS/630">🟢 Актуальные Промокоды 🟢</a></b>'
 
 feedback_link = '<b><a href="https://t.me/ACE_14Karat">🟢 Отзывы 🟢</a></b>'
 

@@ -78,10 +78,10 @@ def get_user_text(message):
                         gobot.send_message(message.chat.id, short_hello_message.format(message.from_user), parse_mode='html')
 
         elif message.chat.type == 'supergroup':
-                if any(message.text.lower() in it for it in promocodes_words ):
+                if message.text.lower() in promocodes_words :
                         gobot.reply_to(message, text=promocodes, parse_mode='html', disable_web_page_preview=True)
 
-                elif any(message.text.lower() in it for it in last_update_words):
+                elif message.text.lower() in last_update_words:
                         gobot.reply_to(message, text=last_update_link, parse_mode='html', disable_web_page_preview=True)
                         
 

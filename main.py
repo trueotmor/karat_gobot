@@ -59,7 +59,7 @@ def get_user_text(message):
                 elif message.text == '🚀 Полезное':
                         gobot.send_message(message.chat.id, useful_message,parse_mode='html', disable_web_page_preview=True,reply_markup=nav.usefulMenu)
 
-                elif any(message.text in it for it in promocodes_words )  :
+                elif message.text.lower() in promocodes_words :
                         gobot.send_message(message.chat.id, promocodes, parse_mode='html', disable_web_page_preview=True)
 
                 elif message.text == '👀 Прайс':
@@ -70,7 +70,7 @@ def get_user_text(message):
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, reply_markup=nav.mainMenu)
                 
-                elif any(message.text in it for it in hello_words ): 
+                elif message.text.lower() in hello_words: 
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo,hello_message.format(message.from_user), parse_mode='html')
 

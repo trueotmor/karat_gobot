@@ -72,7 +72,7 @@ def get_user_text(message):
                 
                 elif message.text.lower() in hello_words: 
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
-                        gobot.send_photo(message.chat.id, photo,hello_message.format(message.from_user), parse_mode='html')
+                        gobot.send_photo(message.chat.id, photo, hello_message.format(message.from_user), parse_mode='html')
 
                 else:
                         gobot.send_message(message.chat.id, short_hello_message.format(message.from_user), parse_mode='html')
@@ -83,6 +83,11 @@ def get_user_text(message):
 
                 elif message.text.lower() in last_update_words:
                         gobot.reply_to(message, text=last_update_link, parse_mode='html', disable_web_page_preview=True)
+
+                elif message.text.lower() in donate_words:
+                        photo=open('./content/img/photo_2022-06-21_10-41-39.jpg', 'rb')
+                        gobot.send_photo(message.chat.id, photo, short_shop_message, reply_to_message_id=message.message_id)
+                        
                         
 
 @server.route(f'/{BOT_TOKEN}', methods=['POST'])

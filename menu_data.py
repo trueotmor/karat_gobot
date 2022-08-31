@@ -1,4 +1,4 @@
-links_message = '<b>🎥 <a href="https://www.youtube.com/c/14Karat">Видики от 14_Karat</a>\n\n <a👉 https://www.youtube.com/channel/UChzJDlq9XeX5lfMSdmb76Pw">Канал - BolikBDM</a>\n\n🆕 <a href="https://t.me/AWAKEN_NEWS">Новости</a>\n\n📢 <a href="https://t.me/AWAKEN_NEWS_PUBLIC">Чатик для общения</a>\n\n⚜️ <a href="https://t.me/aceguild">Поиск гильдии</a>\n\n🤩 <a href="https://discord.gg/awakenchaosera">Офф Discord</a></b>'
+links_message = '<b>🎥 <a href="https://www.youtube.com/c/14Karat">Видики от 14_Karat</a>\n\n <a👉 href="https://www.youtube.com/channel/UChzJDlq9XeX5lfMSdmb76Pw">Канал - BolikBDM</a>\n\n🆕 <a href="https://t.me/AWAKEN_NEWS">Новости</a>\n\n📢 <a href="https://t.me/AWAKEN_NEWS_PUBLIC">Чатик для общения</a>\n\n⚜️ <a href="https://t.me/aceguild">Поиск гильдии</a>\n\n🤩 <a href="https://discord.gg/awakenchaosera">Офф Discord</a></b>'
 
 start_message = 'Класс, ты в теме! \nДобро пожаловать и всё такое! \n\nз.ы. бот в стадии разработки, если хочешь поучавстовать пиши @goodorfood '
 

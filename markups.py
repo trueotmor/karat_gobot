@@ -8,7 +8,7 @@ helper = KeyboardButton('🆘 Helper')
 donate = KeyboardButton('🎉 Поддержать')
 links = KeyboardButton('🔗 Ссылки')
 useful = KeyboardButton('🚀 Полезное')
-friends = KeyboardButton('🤝 Добаление друзей')
+friends = KeyboardButton('🤝 Добавление друзей')
 support = KeyboardButton('🍺 Поддержать команду 14Karat')
 mainMenu.add(shop, helper, links,useful, feedback, offer, friends, support)
 

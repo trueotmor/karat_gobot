@@ -2,10 +2,14 @@ import os
 from telebot import types, TeleBot, logger
 import markups as nav
 from menu_data import *
-from tg_token import BOT_TOKEN, APP_URL
+from tg_token import BOT_TOKEN, APP_URL, DB_URI
 from flask import Flask, request
 import logging
+import psycopg2
 
+
+db_connection = psycopg2.connect(DB_URI, sslmode = 'require')
+db_object = db_connection.cursor()
 
 
 gobot = TeleBot(BOT_TOKEN)
@@ -73,6 +77,14 @@ def get_user_text(message):
                 elif message.text.lower() in hello_words: 
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, hello_message.format(message.from_user), parse_mode='html')
+
+                elif message.text == '🤝 Добаление друзей':
+                        photo=open('./content/img/friends.jpg', 'rb')
+                        gobot.send_photo(message.chat.id, photo, friends_message, reply_markup=nav.friendsMenu)                        
+
+                elif message.text == '🍺 Поддержать команду 14Karat':
+                        photo=open('./content/img/support.jpg', 'rb')
+                        gobot.send_photo(message.chat.id, photo, support_message, reply_markup=nav.friendsMenu)                                                
 
                 else:
                         gobot.send_message(message.chat.id, short_hello_message.format(message.from_user), parse_mode='html')

@@ -78,13 +78,13 @@ def get_user_text(message):
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, hello_message.format(message.from_user), parse_mode='html')
 
-                elif message.text == '🤝 Добаление друзей':
+                elif message.text == '🤝 Добавление друзей':
                         photo=open('./content/img/friends.jpg', 'rb')
-                        gobot.send_photo(message.chat.id, photo, friends_message, reply_markup=nav.friendsMenu)                        
+                        gobot.send_photo(message.chat.id, photo, friends_message, reply_markup=nav.friendsMenu, parse_mode='html')                        
 
                 elif message.text == '🍺 Поддержать команду 14Karat':
                         photo=open('./content/img/support.png', 'rb')
-                        gobot.send_photo(message.chat.id, photo, support_message)                                                
+                        gobot.send_photo(message.chat.id, photo, support_message, parse_mode='html')                                                
 
                 else:
                         gobot.send_message(message.chat.id, short_hello_message.format(message.from_user), parse_mode='html')

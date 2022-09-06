@@ -83,8 +83,8 @@ def get_user_text(message):
                         gobot.send_photo(message.chat.id, photo, friends_message, reply_markup=nav.friendsMenu)                        
 
                 elif message.text == '🍺 Поддержать команду 14Karat':
-                        photo=open('./content/img/support.jpg', 'rb')
-                        gobot.send_photo(message.chat.id, photo, support_message, reply_markup=nav.friendsMenu)                                                
+                        photo=open('./content/img/support.png', 'rb')
+                        gobot.send_photo(message.chat.id, photo, support_message)                                                
 
                 else:
                         gobot.send_message(message.chat.id, short_hello_message.format(message.from_user), parse_mode='html')

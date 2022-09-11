@@ -17,10 +17,11 @@ link1 = InlineKeyboardButton(text='✍️ Оставить отзыв', callback
 item2 = InlineKeyboardButton(text='👀 Посмотреть отзывы', url = 'https://t.me/ACE_14Karat')
 feedbackMenu.add(link1, item2)
 
-usefulMenu = InlineKeyboardMarkup(row_width=2)
+usefulMenu = InlineKeyboardMarkup(row_width=3)
 link1 = InlineKeyboardButton(text='🟢Разное🟢', url = 'https://t.me/AWAKEN_NEWS/65')
 item2 = InlineKeyboardButton(text='🟢Промокоды🟢', url = 'https://t.me/AWAKEN_NEWS/630')
-usefulMenu.add(link1, item2)
+tier = InlineKeyboardButton(text='🟢ТирЛист🟢', url = 'https://t.me/AWAKEN_NEWS/907')
+usefulMenu.add(link1, item2, tier)
 
 look_feedback_link = InlineKeyboardMarkup(row_width=1)
 link1 = InlineKeyboardButton(text='Отзывы', url = 'https://t.me/ACE_14Karat')

@@ -10,7 +10,7 @@ links = KeyboardButton('🔗 Ссылки')
 useful = KeyboardButton('🚀 Полезное')
 friends = KeyboardButton('🤝 Добавление друзей')
 support = KeyboardButton('🍺 Поддержать команду 14Karat')
-mainMenu.add(shop, helper, links,useful, feedback, offer, friends, support)
+mainMenu.add(shop, helper, links,useful, feedback, offer, support)
 
 feedbackMenu = InlineKeyboardMarkup(row_width=2)
 link1 = InlineKeyboardButton(text='✍️ Оставить отзыв', callback_data='✍️ Оставить отзыв')
@@ -38,11 +38,11 @@ shopButton = InlineKeyboardButton(text='Shop',callback_data='shop')
 anotherButton = InlineKeyboardButton(text='Другое',callback_data='another')
 optionMenu.add(helperButton, shopButton, anotherButton)
 
-friendsMenu = ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
-friends_list = KeyboardButton('📜 Список')
-add_yoursef = KeyboardButton('➕ Добавиться в список')
-go_back = KeyboardButton('🔙 Назад')
-friendsMenu.add(friends_list,add_yoursef, go_back)
+# friendsMenu = ReplyKeyboardMarkup(resize_keyboard=True, row_width=3)
+# friends_list = KeyboardButton('📜 Список')
+# add_yoursef = KeyboardButton('➕ Добавиться в список')
+# go_back = KeyboardButton('🔙 Назад')
+# friendsMenu.add(friends_list,add_yoursef, go_back)
 
 
 

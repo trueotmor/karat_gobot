@@ -2,7 +2,7 @@ import os
 from telebot import types, TeleBot, logger
 import markups as nav
 from menu_data import *
-from tg_token import BOT_TOKEN, APP_URL, DB_URI
+from tg_token import BOT_TOKEN, APP_URL
 from flask import Flask, request
 import logging
 # import psycopg2

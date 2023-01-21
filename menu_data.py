@@ -23,7 +23,7 @@ short_hello_message = 'Чтобы открыть меню жмакай сюда 
 
 useful_message = 'Тут должны быть разные полезности по игре, кидайте в личку @Karatcc или @goodorfood что нужно добавить.\n\n'
 
-guilds_message = '<b><a href="https://t.me/aceguild">🟢 Чатик для поиска гильдии 🟢</a></b>'
+guilds_message = '<b><a href="https://t.me/aceguild"> 👈🏻 Чатик для поиска гильдии</a></b>'
 
 promocodes = '<b><a href="https://t.me/AWAKEN_NEWS/630">🟢 Актуальные Промокоды 🟢</a></b>'
 

@@ -103,6 +103,10 @@ def get_user_text(message):
                 elif message.text.lower() in tier_words:
                         photo=open('./content/img/tier.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, reply_to_message_id=message.message_id)
+
+                elif message.text.lower() in guild_words:
+                        photo=open('./content/img/guilds.png', 'rb')
+                        gobot.send_photo(message.chat.id, photo, guilds_message, reply_to_message_id=message.message_id)
                         
                         
 

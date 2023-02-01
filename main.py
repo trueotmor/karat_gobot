@@ -110,7 +110,7 @@ def get_user_text(message):
 
                 elif message.text.lower() in friends_words:
                         photo=open('./content/img/friends.jpg', 'rb')
-                        gobot.send_photo(message.chat.id, photo, friends_message, reply_to_message_id=message.message_id)
+                        gobot.send_photo(message.chat.id, photo, friends_message, parse_mode='html', reply_to_message_id=message.message_id)
                         
                         
 

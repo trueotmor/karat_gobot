@@ -101,12 +101,16 @@ def get_user_text(message):
                         gobot.send_photo(message.chat.id, photo, short_shop_message, reply_to_message_id=message.message_id, parse_mode='html')
 
                 elif message.text.lower() in tier_words:
-                        photo=open('./content/img/tier.jpg', 'rb')
+                        photo=open('./content/img/tier.png', 'rb')
                         gobot.send_photo(message.chat.id, photo, reply_to_message_id=message.message_id)
 
                 elif message.text.lower() in guild_words:
                         photo=open('./content/img/guilds.png', 'rb')
                         gobot.send_photo(message.chat.id, photo, guilds_message, reply_to_message_id=message.message_id)
+
+                elif message.text.lower() in friends_words:
+                        photo=open('./content/img/friends.jpg', 'rb')
+                        gobot.send_photo(message.chat.id, photo, friends_message, reply_to_message_id=message.message_id)
                         
                         
 

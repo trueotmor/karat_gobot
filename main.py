@@ -115,6 +115,9 @@ def get_user_text(message):
                 elif message.text.lower() in beer_words:
                         photo=open('./content/img/beer.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo,reply_to_message_id=message.message_id)
+
+                elif message.text.lower() in friday_words:
+                        gobot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAEHov9j430s02lbT10kKEY1zUHr5VfL6AAC1gADCRI0AAFjEdlgXM4S6S4E')
                         
                         
 

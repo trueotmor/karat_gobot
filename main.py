@@ -117,7 +117,7 @@ def get_user_text(message):
                         gobot.send_photo(message.chat.id, photo,reply_to_message_id=message.message_id)
 
                 elif message.text.lower() in friday_words:
-                        gobot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAEHov9j430s02lbT10kKEY1zUHr5VfL6AAC1gADCRI0AAFjEdlgXM4S6S4E')
+                        gobot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAEHowFj43-TKdwXqIdHCmKd-f6B5gMEMAAC7QADCRI0AAGuyfIR-52_4i4E')
                         
                         
 

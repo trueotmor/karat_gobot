@@ -21,11 +21,11 @@ short_hello_message = 'Чтобы открыть меню жмакай сюда 
 
 useful_message = 'Тут должны быть разные полезности по игре, кидайте в личку @Karatcc или @goodorfood что нужно добавить.\n\n'
 
-# guilds_message = 'https://t.me/AWAKEN_NEWS_PUBLIC/201057 👈🏻 Чатик для поиска гильдии'
-
 guilds_message = '<b><a href="https://t.me/AWAKEN_NEWS_PUBLIC/201057">👉 Поиск гильдии 👈</a></b>'
 
 friends_message = '<b><a href="https://t.me/AWAKEN_NEWS_PUBLIC/201060">👉 Поиск друзей 👈</a></b>'
+
+accounts_message = '<b><a href="https://t.me/awaken_accounts">👉 Аккаунты 👈</a></b>'
 
 promocodes = '<b><a href="https://t.me/AWAKEN_NEWS/630">🟢 Актуальные Промокоды 🟢</a></b>'
 
@@ -48,6 +48,8 @@ tier_words = ['тир', 'тирлист', 'тир-лист', 'тир лист', 
 donate_words = ['донат', 'пропуск', 'задонатить', 'donate', 'купить пропуск']
 
 last_update_words = ['патч', 'обнова', 'обновление', 'последнее обновление', 'патчноут', 'patch', 'patchnote', 'патчи']
+
+accounts_words = ['купить аккаунт', 'купить акк', 'магазин аккаунтов', 'магазин акков']
 
 last_update_link = '<b><a href="https://discord.com/channels/723476014029602828/913088695836495942">🟢 patch-notes 🟢</a></b>'
 

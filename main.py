@@ -5,12 +5,8 @@ from menu_data import *
 from tg_token import BOT_TOKEN, APP_URL
 from flask import Flask, request
 import logging
-# import psycopg2
-
-
-# db_connection = psycopg2.connect(DB_URI, sslmode = 'require')
-# db_object = db_connection.cursor()
-
+import schedule
+import time
 
 gobot = TeleBot(BOT_TOKEN)
 server = Flask(__name__)
@@ -78,10 +74,6 @@ def get_user_text(message):
                         photo=open('./content/img/photo_2022-08-17_12-05-22.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, hello_message.format(message.from_user), parse_mode='html')
 
-                # elif message.text == '🤝 Добавление друзей':
-                #         photo=open('./content/img/friends.jpg', 'rb')
-                #         gobot.send_photo(message.chat.id, photo, friends_message, reply_markup=nav.friendsMenu, parse_mode='html')                        
-
                 elif message.text == '🍺 Поддержать команду 14Karat':
                         photo=open('./content/img/support.png', 'rb')
                         gobot.send_photo(message.chat.id, photo, support_message, parse_mode='html')                                                
@@ -115,6 +107,10 @@ def get_user_text(message):
                 elif message.text.lower() in beer_words:
                         photo=open('./content/img/beer.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo,reply_to_message_id=message.message_id)
+
+                elif message.text.lower() in accounts_words:
+                        photo=open('./content/img/acc.jpg', 'rb')
+                        gobot.send_photo(message.chat.id, photo, accounts_message, parse_mode='html', reply_to_message_id=message.message_id)
 
                 elif message.text.lower() in friday_words:
                         gobot.send_sticker(message.chat.id, 'CAACAgIAAxkBAAEHowFj43-TKdwXqIdHCmKd-f6B5gMEMAAC7QADCRI0AAGuyfIR-52_4i4E')

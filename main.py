@@ -5,14 +5,15 @@ from menu_data import *
 from tg_token import BOT_TOKEN, APP_URL
 from flask import Flask, request
 import logging
-import schedule
-import time
+# import schedule
+# import time
 
 gobot = TeleBot(BOT_TOKEN)
 server = Flask(__name__)
 logger.setLevel(logging.DEBUG)
 
 CHANNEL_URL = '@ACE_14Karat'
+# AWAKEN_NEWS_URL = '@AWAKEN_NEWS'
 
 @gobot.message_handler(commands=['start'])
 def start(message):

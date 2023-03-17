@@ -93,9 +93,9 @@ def get_user_text(message):
                         photo=open('./content/img/photo_2022-06-21_10-41-39.jpg', 'rb')
                         gobot.send_photo(message.chat.id, photo, short_shop_message, reply_to_message_id=message.message_id, parse_mode='html')
 
-                elif message.text.lower() in tier_words:
-                        photo=open('./content/img/tier.png', 'rb')
-                        gobot.send_photo(message.chat.id, photo, reply_to_message_id=message.message_id)
+                # elif message.text.lower() in tier_words:
+                #         photo=open('./content/img/tier.png', 'rb')
+                #         gobot.send_photo(message.chat.id, photo, reply_to_message_id=message.message_id)
 
                 elif message.text.lower() in guild_words:
                         photo=open('./content/img/guilds.png', 'rb')
